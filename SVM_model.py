@@ -18,6 +18,6 @@ if st.button('Predict'):
     result=model.predict(data)
 
     if result[0]==1:
-        st.error('Drug is responding to body')
+        st.success('Drug is responding to body')
     else:
-        st.success('No effect of drug on body')
+        st.error('No effect of drug on body')
